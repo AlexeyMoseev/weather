@@ -1,0 +1,57 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "Weather widget built with Vue.js, TypeScript, and Webpack",
+  "main": "dist/weather-widget.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.ts",
+    "lint:fix": "eslint . --ext .vue,.js,.ts --fix",
+    "format": "prettier --write \"src/**/*.{js,ts,vue,json,css,scss}\""
+  },
+  "keywords": [
+    "weather",
+    "widget",
+    "vue",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.0",
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vue/compiler-sfc": "^3.3.4",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "dotenv-webpack": "^8.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.5.1",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.6.2",
+    "sass": "^1.69.0",
+    "sass-embedded": "^1.93.3",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.47.0",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-loader": "^17.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vue": "^3.3.4",
+    "vuetify": "^3.10.11"
+  }
+}
