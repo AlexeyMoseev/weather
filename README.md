@@ -19,7 +19,7 @@ A customizable, production-ready weather widget built with Vue 3 Composition API
 ### Prerequisites
 
 - Node.js (v16 or higher)
-- npm or yarn
+- npm, yarn, or pnpm (this project uses yarn with `yarn.lock`)
 - OpenWeatherMap API key ([get one free](https://openweathermap.org/api))
 
 ### Installation
@@ -29,7 +29,10 @@ A customizable, production-ready weather widget built with Vue 3 Composition API
 ```bash
 git clone <repository-url>
 cd plumsail
-npm install
+yarn install
+# or use npm/pnpm:
+# npm install
+# pnpm install
 ```
 
 2. **Configure environment variables:**
@@ -51,13 +54,15 @@ OPENWEATHER_API_KEY=your_api_key_here
 3. **Start development server:**
 
 ```bash
-npm run dev
+yarn dev
+# or: npm run dev / pnpm dev
 ```
 
 4. **Build for production:**
 
 ```bash
-npm run build
+yarn build
+# or: npm run build / pnpm build
 ```
 
 The compiled widget will be in `dist/weather-widget.js`.
@@ -172,13 +177,15 @@ src/
 
 ### Available Scripts
 
+All scripts work with npm, yarn, or pnpm (replace `yarn` with your preferred package manager):
+
 ```bash
-npm run dev          # Start dev server with hot reload
-npm run build        # Production build with minification
-npm run type-check   # TypeScript type validation
-npm run lint         # ESLint code quality check
-npm run lint:fix     # Auto-fix linting issues
-npm run format       # Format code with Prettier
+yarn dev          # Start dev server with hot reload
+yarn build        # Production build with minification
+yarn type-check   # TypeScript type validation
+yarn lint         # ESLint code quality check
+yarn lint:fix     # Auto-fix linting issues
+yarn format       # Format code with Prettier
 ```
 
 ### Tech Stack
