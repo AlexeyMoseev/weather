@@ -1,5 +1,5 @@
 <template>
-  <v-app style="border-radius: 12px">
+  <v-app class="rounded">
     <v-container class="weather-widget pa-0">
       <!-- Loading State -->
       <v-card v-if="isLoading" class="text-center pa-8" elevation="2">
